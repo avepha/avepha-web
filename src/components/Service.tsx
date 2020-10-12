@@ -1,11 +1,12 @@
-import React from 'react';
-import LineIcon from "react-lineicons";
+import React from 'react'
+// @ts-ignore
+import LineIcon from 'react-lineicons'
 
-function Service(props){
+const Service: React.FC<any> = (props) => {
   return (
     <div className="mi-service">
       <span className="mi-service-icon">
-        <LineIcon name={props.content.icon} />
+        <LineIcon name={props.content.icon}/>
       </span>
       <h5>{props.content.title}</h5>
       <p>{props.content.details}</p>
@@ -13,4 +14,4 @@ function Service(props){
   )
 }
 
-export default Service;
+export default Service

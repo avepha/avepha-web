@@ -1,8 +1,8 @@
 import React from 'react'
-import Particles from "react-particles-js";
+import Particles from 'react-particles-js'
 
 const GraphParticles = () => {
-  const paramConfig = {
+  const paramConfig: any = {
     particles: {
       number: {
         value: 60,
@@ -36,7 +36,7 @@ const GraphParticles = () => {
       }
     }
   }
-
+  
   return <Particles className="mi-home-particle" params={paramConfig}/>
 }
 

@@ -1525,6 +1525,13 @@
   resolved "https://registry.yarnpkg.com/@types/events/-/events-3.0.0.tgz#2862f3f58a9a7f7c3e78d79f130dd4d71c25c2a7"
   integrity sha512-EaObqwIvayI5a8dCzhFrjKzVwKLxjoG9T6Ppd5CEo07LRKfQ8Yokw54r5+Wq7FaBQ+yXRvQAYPrHwya1/UFt9g==
 
+"@types/fslightbox-react@^1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@types/fslightbox-react/-/fslightbox-react-1.4.0.tgz#d2b20486830745ae80318c1c478c9beae5f2cd8a"
+  integrity sha512-ocIiZqFQ3BWBZB8Bp0fuNma7Eb0aOjkgk/nEUfW0omdRw4ciaVivabfsWldNuR69KwRJrvs6MZQuvVV6JEqlFg==
+  dependencies:
+    "@types/react" "*"
+
 "@types/glob@^7.1.1":
   version "7.1.1"
   resolved "https://registry.yarnpkg.com/@types/glob/-/glob-7.1.1.tgz#aa59a1c6e3fbc421e07ccd31a944c30eba521575"
@@ -1635,6 +1642,13 @@
   integrity sha512-HzOyJb+wFmyEhyfp4D4NYrumi+LQgQL/68HvJO+q6XtuHSDvw6Aqov7sCAhjbNq3bUPgPqbdvjXC5HeB2oEAPg==
   dependencies:
     "@types/history" "*"
+    "@types/react" "*"
+
+"@types/react-typist@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@types/react-typist/-/react-typist-2.0.1.tgz#c3d8d9dc29598737a6b53b087404c0e10485b119"
+  integrity sha512-SxKLwnX8feAB565481AuwezqJ+DWjtri6pgGLzw3SzX/o/UT9kadp1A6fBrRNqJiGOsxh59NE+7KOOVeTkVV0Q==
+  dependencies:
     "@types/react" "*"
 
 "@types/react@*", "@types/react@^16.9.0":
@@ -9350,10 +9364,10 @@ react-is@^16.12.0, react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1, react-i
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-react-lineicons@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/react-lineicons/-/react-lineicons-1.0.0.tgz#4f199af92aa0cc7676b46bad343a585dce92efdc"
-  integrity sha512-OPnf/nojH51JlemS8AXNMd8hRwiWBIWSPA28ORUcGtY8tRiUrKDM+Szi26Sq5AhG5xxrB0xrzfS9wJddWYu58g==
+react-lineicons@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/react-lineicons/-/react-lineicons-2.2.0.tgz#1f773cffbce72dafd95ddc2956d9f70c6f08de0f"
+  integrity sha512-PYQpfDGlaSFkujh3gYsFGhWETUnZ9mbeNFYTptZZ0yKWQ5I3GsTPGzJHYmbZNHxek0py0GFxE7zoIAg1KKcQ8g==
   dependencies:
     prop-types "^15.7.2"
 

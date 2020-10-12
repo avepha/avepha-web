@@ -1,8 +1,8 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import Layout from "../components/Layout";
+import React from 'react'
+import {Link} from 'react-router-dom'
+import Layout from '../components/Layout'
 
-function Notfound() {
+const Notfound: React.FC<any> = () => {
   return (
     <Layout>
       <div className="mi-about-area mi-section">
@@ -23,7 +23,7 @@ function Notfound() {
         </div>
       </div>
     </Layout>
-  );
+  )
 }
 
-export default Notfound;
+export default Notfound

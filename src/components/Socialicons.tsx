@@ -1,17 +1,18 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
-import LineIcon from 'react-lineicons';
+import React, {useEffect, useState} from 'react'
+import axios from 'axios'
+// @ts-ignore
+import LineIcon from 'react-lineicons'
 
-function Socialicons(props) {
-  const [socialLinks, setSocialLinks] = useState({});
-
+const Socialicons: React.FC<any> = (props) =>  {
+  const [socialLinks, setSocialLinks] = useState<any>({})
+  
   useEffect(() => {
     axios.get('/api/information')
       .then(response => {
-        setSocialLinks(response.data.socialLinks);
-      });
-  }, []);
-
+        setSocialLinks(response.data.socialLinks)
+      })
+  }, [])
+  
   return (
     <ul
       className={props.bordered ? 'mi-socialicons mi-socialicons-bordered' : 'mi-socialicons'}>
@@ -55,7 +56,7 @@ function Socialicons(props) {
         </a>
       </li>}
     </ul>
-  );
+  )
 }
 
-export default Socialicons;
+export default Socialicons

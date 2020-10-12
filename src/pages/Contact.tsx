@@ -1,18 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import * as Icon from 'react-feather'
-import Sectiontitle from '../components/Sectiontitle'
+import SectionTitle from '../components/section-title'
 import Layout from '../components/Layout'
 
 function Contact() {
   const [phoneNumbers, setPhoneNumbers] = useState([])
   const [emailAddress, setEmailAddress] = useState([])
   const [address, setAddress] = useState([])
-
-  const numberFormatter = (number) => {
-    const phnNumber = number
-    return phnNumber
-  }
 
   useEffect(() => {
     axios.get('/api/contactinfo')
@@ -28,7 +23,7 @@ function Contact() {
       <div
         className="mi-contact-area mi-section mi-padding-top mi-padding-bottom">
         <div className="container">
-          <Sectiontitle title="Contact Me"/>
+          <SectionTitle title="Contact Me"/>
           <div className="row">
             <div className="col-lg-6">
               <div className="mi-contact-info">
@@ -40,8 +35,7 @@ function Contact() {
                     <div className="mi-contact-infoblock-content">
                       <h6>Phone</h6>
                       {phoneNumbers.map(phoneNumber => (
-                        <p key={phoneNumber}><a
-                          href={numberFormatter(phoneNumber)}>{phoneNumber}</a>
+                        <p key={phoneNumber}><a href={phoneNumber}>{phoneNumber}</a>
                         </p>
                       ))}
                     </div>

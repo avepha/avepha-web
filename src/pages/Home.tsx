@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom'
 import pkg from '../../package.json'
 
 function Home() {
-  const [information, setInformation] = useState('')
+  const [information, setInformation] = useState<any>('')
   const [counter, setCounter] = useState(0)
   useEffect(() => {
     axios.get('/api/information')

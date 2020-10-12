@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Testimonial(props){
+const Testimonial: React.FC<any> = (props) => {
   return (
     <div className="mi-testimonial-slideritem">
       <div className="mi-testimonial">
@@ -18,4 +18,4 @@ function Testimonial(props){
   )
 }
 
-export default Testimonial;
+export default Testimonial

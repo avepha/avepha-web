@@ -9,7 +9,6 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import Layout from '../src/components/Layout'
 
 const App: NextPage<any> = ({Component, pageProps}) => {
-  
   return (
     <>
       <Layout title="Avepha - Home">

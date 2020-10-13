@@ -2,7 +2,6 @@ import React from 'react'
 import {GetStaticProps, NextPage} from 'next'
 import * as Icon from 'react-feather'
 import SectionTitle from '../../src/components/section-title'
-import Layout from '../../src/components/Layout'
 import db from '../../src/data/database'
 
 type ContactPage = {

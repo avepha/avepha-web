@@ -1,12 +1,11 @@
 import React, {useState} from 'react'
 import {GetStaticProps, NextPage} from 'next'
 import SectionTitle from '../../src/components/section-title'
-import Layout from '../../src/components/Layout'
 import Pagination from '../../src/components/Pagination'
 import PortfoliosView from '../../src/components/PortfoliosView'
 import db from '../../src/data/database'
 
-const PhotosPage:NextPage<{portfolios: any}> = ({portfolios}) => {
+const PhotosPage: NextPage<{ portfolios: any }> = ({portfolios}) => {
   const [currentPage, setCurrentPage] = useState(1)
   const [portfoliosPerPage] = useState(9)
   
@@ -26,17 +25,17 @@ const PhotosPage:NextPage<{portfolios: any}> = ({portfolios}) => {
     <>
       <div className="mi-about mi-section mi-padding-top mi-padding-bottom">
         <div className="container">
-          <SectionTitle title="Portfolios"/>
-          {<PortfoliosView portfolios={currentPortfolios}/>}
-          {!(portfolios.length > portfoliosPerPage) ? null : (
-            <Pagination
-              className="mt-50"
-              itemsPerPage={portfoliosPerPage}
-              totalItems={portfolios.length}
-              paginate={paginate}
-              currentPage={currentPage}
-            />
-          )}
+          <SectionTitle title="Photos"/>
+          {/*{<PortfoliosView portfolios={currentPortfolios}/>}*/}
+          {/*{!(portfolios.length > portfoliosPerPage) ? null : (*/}
+          {/*  <Pagination*/}
+          {/*    className="mt-50"*/}
+          {/*    itemsPerPage={portfoliosPerPage}*/}
+          {/*    totalItems={portfolios.length}*/}
+          {/*    paginate={paginate}*/}
+          {/*    currentPage={currentPage}*/}
+          {/*  />*/}
+          {/*)}*/}
         </div>
       </div>
     </>

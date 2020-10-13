@@ -2,13 +2,14 @@ import React, {useState} from 'react'
 import Typist from 'react-typist'
 import Link from 'next/link'
 import {GetStaticProps, NextPage} from 'next'
+import SocialIcons from '../../src/components/SocialIcons'
 import GraphParticles from '../../src/components/GraphParticles'
 import db from '../../src/data/database'
 import pkg from '../../package.json'
 
-const HomePage: NextPage<any> = ({information}) => {
+const HomePage: NextPage<{information: any}> = ({information}) => {
   const [counter, setCounter] = useState(0)
-  
+  const {socialLinks} = information
   return (
     <>
       <div className="mi-home-area mi-padding-section">
@@ -26,8 +27,7 @@ const HomePage: NextPage<any> = ({information}) => {
                   <span className="color-theme-dark">{information.name}</span>
                 </h1>
                 <h2 className="color-body">
-                  <Typist key={counter}
-                          onTypingDone={() => setCounter(counter + 1)} cursor={{
+                  <Typist key={counter} onTypingDone={() => setCounter(counter + 1)} cursor={{
                     blink: true,
                     element: '_',
                     hideWhenDone: false,
@@ -43,16 +43,15 @@ const HomePage: NextPage<any> = ({information}) => {
                   </Typist>
                 </h2>
                 <p>{information.aboutContent}</p>
-                {/*<Socialicons bordered/>*/}
+                <SocialIcons bordered socialLinks={socialLinks}/>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="position-absolute" style={{bottom: 0, right: 0, fontSize: 10}}>
-        version: {pkg.version}
+      <div className="position-absolute" style={{bottom: 0, right: '3ch', fontSize: 15}}>
+        v.{pkg.version}
       </div>
-    
     </>
   )
 }

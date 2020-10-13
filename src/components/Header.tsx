@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
 import ActiveLink from 'src/components/ActiveLink'
-import {faBars, faTimes} from '@fortawesome/free-solid-svg-icons'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import dynamic from 'next/dynamic'
+// @ts-ignore
+const LineIcon: any = dynamic(() => import ('react-lineicons'), {ssr: false})
 
 const Header: React.FC = () => {
   const [navigationToggle, setNavigationToggle] = useState(false)
@@ -12,12 +13,14 @@ const Header: React.FC = () => {
   
   return (
     <nav className={navigationToggle ? 'mi-header is-visible' : 'mi-header'}>
-      <button onClick={handleNavigationToggle} className="mi-header-toggler">
-        {!navigationToggle ? <FontAwesomeIcon icon={faBars}/> : <FontAwesomeIcon icon={faTimes}/>}
+      <button name="nav-toggle" onClick={handleNavigationToggle} className="mi-header-toggler">
+        {!navigationToggle ? <LineIcon name="menu"/> : <LineIcon name="close"/>}
       </button>
       <div className="mi-header-inner">
         <div className="mi-header-image d-none d-md-none d-lg-block">
-          <h3><span className="color-body font-weight-bold">AVEPHA</span></h3>
+          <h3>
+            <span className="color-body font-weight-bold">AVEPHA</span>
+          </h3>
           <ActiveLink href="/">
             <a><img src="/images/brand-image.jpg" alt="brandimage"/></a>
           </ActiveLink>

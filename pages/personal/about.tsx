@@ -2,12 +2,12 @@ import React, {useState} from 'react'
 import {GetStaticProps, NextPage} from 'next'
 import FsLightbox from 'fslightbox-react'
 import * as Icon from 'react-feather'
+
 import SectionTitle from '../../src/components/section-title'
-import Layout from '../../src/components/Layout'
 import SmallTitle from '../../src/components/small-title'
 import db from '../../src/data/database'
 
-const About: NextPage<{information: any}> = ({information}) => {
+const About: NextPage<{ information: any }> = ({information}) => {
   const [toggle, setToggle] = useState(false)
   
   return (
@@ -80,7 +80,10 @@ const About: NextPage<{information: any}> = ({information}) => {
                   )}
                 </ul>
                 <a href={information.cvfile} className="mi-button">
-                  Download CV
+                  CV
+                </a>
+                <a href={information.cvfile} className="mi-button ml-3">
+                  Resume
                 </a>
               </div>
             </div>

@@ -1,23 +1,21 @@
-import React, {useEffect, useState} from 'react'
-import axios from 'axios'
+import React from 'react'
+import dynamic from 'next/dynamic'
+// @ts-ignore
+const LineIcon: any = dynamic(() => import ('react-lineicons'), {ssr: false})
 
-const Socialicons: React.FC<any> = (props) =>  {
-  const [socialLinks, setSocialLinks] = useState<any>({})
-  
-  useEffect(() => {
-    axios.get('/api/information')
-      .then(response => {
-        setSocialLinks(response.data.socialLinks)
-      })
-  }, [])
-  
+type SocialIconsProps = {
+  socialLinks: any
+  bordered: boolean
+}
+
+const SocialIcons: React.FC<SocialIconsProps> = (props) => {
+  const {socialLinks, bordered} = props
   return (
-    <ul
-      className={props.bordered ? 'mi-socialicons mi-socialicons-bordered' : 'mi-socialicons'}>
+    <ul className={bordered ? 'mi-socialicons mi-socialicons-bordered' : 'mi-socialicons'}>
       {!socialLinks.facebook ? null : <li>
         <a rel="noopener noreferrer" target="_blank"
            href={socialLinks.facebook}>
-          {/*<LineIcon name="facebook"/>*/}
+          <LineIcon name="facebook"/>
         </a>
       </li>}
       {!socialLinks.twitter ? null : <li>
@@ -50,11 +48,11 @@ const Socialicons: React.FC<any> = (props) =>  {
       </li>}
       {!socialLinks.github ? null : <li>
         <a rel="noopener noreferrer" target="_blank" href={socialLinks.github}>
-          {/*<LineIcon name="github"/>*/}
+          <LineIcon name="github"/>
         </a>
       </li>}
     </ul>
   )
 }
 
-export default Socialicons
+export default SocialIcons

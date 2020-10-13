@@ -11,7 +11,7 @@ export default {
     freelanceStatus: 'Available',
     socialLinks: {
       facebook: 'https://facebook.com/s.alfarie',
-      twitter: 'https://twitter.com',
+      twitter: '',
       pinterest: '',
       behance: '',
       linkedin: '',

@@ -50,7 +50,6 @@
     display: block;
     width: 100%;
     text-align: center;
-    border-bottom: 1px solid $color-border;
 
     a {
       height: 200px;
@@ -60,6 +59,10 @@
       overflow: hidden;
       display: inline-block;
       vertical-align: middle;
+    }
+
+    @media #{$layout-dektop}, #{$layout-desktop-xs}, #{$layout-notebook}, #{$layout-tablet} {
+      border-bottom: 1px solid $color-border;
     }
   }
 

@@ -1,27 +1,20 @@
-import React, { useEffect, useState } from 'react'
-import axios from 'axios'
+import React from 'react'
+import {GetStaticProps, NextPage} from 'next'
 import * as Icon from 'react-feather'
-import SectionTitle from '../components/section-title'
-import Layout from '../components/Layout'
+import SectionTitle from '../../src/components/section-title'
+import Layout from '../../src/components/Layout'
+import db from '../../src/data/database'
 
-function Contact() {
-  const [phoneNumbers, setPhoneNumbers] = useState([])
-  const [emailAddress, setEmailAddress] = useState([])
-  const [address, setAddress] = useState([])
+type ContactPage = {
+  phoneNumbers: any[]
+  emailAddress: any[]
+  address: any[]
+}
 
-  useEffect(() => {
-    axios.get('/api/contactinfo')
-      .then(response => {
-        setPhoneNumbers(response.data.phoneNumbers)
-        setEmailAddress(response.data.emailAddress)
-        setAddress(response.data.address)
-      })
-  }, [])
-
+const ContactPage: NextPage<ContactPage> = ({phoneNumbers, emailAddress, address}) => {
   return (
-    <Layout>
-      <div
-        className="mi-contact-area mi-section mi-padding-top mi-padding-bottom">
+    <Layout title="Avepha - Contact">
+      <div className="mi-contact-area mi-section mi-padding-top mi-padding-bottom">
         <div className="container">
           <SectionTitle title="Contact Me"/>
           <div className="row">
@@ -75,4 +68,14 @@ function Contact() {
   )
 }
 
-export default Contact
+export const getStaticProps: GetStaticProps = async () => {
+  return {
+    props: {
+      phoneNumbers: db.contactInfo.phoneNumbers,
+      emailAddress: db.contactInfo.emailAddress,
+      address: db.contactInfo.address
+    }
+  }
+}
+
+export default ContactPage

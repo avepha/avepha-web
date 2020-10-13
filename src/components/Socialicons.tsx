@@ -1,7 +1,5 @@
 import React, {useEffect, useState} from 'react'
 import axios from 'axios'
-// @ts-ignore
-import LineIcon from 'react-lineicons'
 
 const Socialicons: React.FC<any> = (props) =>  {
   const [socialLinks, setSocialLinks] = useState<any>({})
@@ -19,40 +17,40 @@ const Socialicons: React.FC<any> = (props) =>  {
       {!socialLinks.facebook ? null : <li>
         <a rel="noopener noreferrer" target="_blank"
            href={socialLinks.facebook}>
-          <LineIcon name="facebook"/>
+          {/*<LineIcon name="facebook"/>*/}
         </a>
       </li>}
       {!socialLinks.twitter ? null : <li>
         <a rel="noopener noreferrer" target="_blank" href={socialLinks.twitter}>
-          <LineIcon name="twitter"/>
+          {/*<LineIcon name="twitter"/>*/}
         </a>
       </li>}
       {!socialLinks.pinterest ? null : <li>
         <a rel="noopener noreferrer" target="_blank"
            href={socialLinks.pinterest}>
-          <LineIcon name="pinterest"/>
+          {/*<LineIcon name="pinterest"/>*/}
         </a>
       </li>}
       {!socialLinks.behance ? null : <li>
         <a rel="noopener noreferrer" target="_blank" href={socialLinks.behance}>
-          <LineIcon name="behance"/>
+          {/*<LineIcon name="behance"/>*/}
         </a>
       </li>}
       {!socialLinks.linkedin ? null : <li>
         <a rel="noopener noreferrer" target="_blank"
            href={socialLinks.linkedin}>
-          <LineIcon name="linkedin"/>
+          {/*<LineIcon name="linkedin"/>*/}
         </a>
       </li>}
       {!socialLinks.dribbble ? null : <li>
         <a rel="noopener noreferrer" target="_blank"
            href={socialLinks.dribbble}>
-          <LineIcon name="dribbble"/>
+          {/*<LineIcon name="dribbble"/>*/}
         </a>
       </li>}
       {!socialLinks.github ? null : <li>
         <a rel="noopener noreferrer" target="_blank" href={socialLinks.github}>
-          <LineIcon name="github"/>
+          {/*<LineIcon name="github"/>*/}
         </a>
       </li>}
     </ul>

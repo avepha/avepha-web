@@ -1,6 +1,4 @@
 import React from 'react'
-// @ts-ignore
-import LineIcon from 'react-lineicons'
 
 type PaginationProps = {
   itemsPerPage: number
@@ -29,7 +27,7 @@ const Pagination: React.FC<PaginationProps> = ({
         {currentPage === 1 ? null : (
           <li>
             <a onClick={e => paginate(e, currentPage - 1)} href="!#">
-              <LineIcon name="chevron-left"/>
+              {/*<LineIcon name="chevron-left"/>*/}
             </a>
           </li>
         )}
@@ -44,7 +42,7 @@ const Pagination: React.FC<PaginationProps> = ({
         {currentPage === pageNumbers[pageNumbers.length - 1] ? null : (
           <li>
             <a onClick={e => paginate(e, currentPage + 1)} href="!#">
-              <LineIcon name="chevron-right"/>
+              {/*<LineIcon name="chevron-right"/>*/}
             </a>
           </li>
         )}

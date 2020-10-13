@@ -1,25 +1,14 @@
-import React, {useEffect, useState} from 'react'
-import axios from 'axios'
-import SectionTitle from '../components/section-title'
-import Layout from '../components/Layout'
-import Pagination from '../components/Pagination'
-import PortfoliosView from '../components/PortfoliosView'
+import React, {useState} from 'react'
+import {GetStaticProps, NextPage} from 'next'
+import SectionTitle from '../../src/components/section-title'
+import Layout from '../../src/components/Layout'
+import Pagination from '../../src/components/Pagination'
+import PortfoliosView from '../../src/components/PortfoliosView'
+import db from '../../src/data/database'
 
-function Portfolios() {
-  const [portfolios, setPortfoios] = useState([])
+const PhotosPage:NextPage<{portfolios: any}> = ({portfolios}) => {
   const [currentPage, setCurrentPage] = useState(1)
   const [portfoliosPerPage] = useState(9)
-  
-  // @ts-ignore
-  useEffect(() => {
-    let mounted = true
-    axios.get('/api/portfolios').then((response) => {
-      if (mounted) {
-        setPortfoios(response.data)
-      }
-    })
-    return () => mounted = false
-  }, [portfolios])
   
   const indexOfLastPortfolios = currentPage * portfoliosPerPage
   const indexOfFirstPortfolios = indexOfLastPortfolios - portfoliosPerPage
@@ -34,7 +23,7 @@ function Portfolios() {
   }
   
   return (
-    <Layout>
+    <Layout title="Avepha - Experience">
       <div className="mi-about mi-section mi-padding-top mi-padding-bottom">
         <div className="container">
           <SectionTitle title="Portfolios"/>
@@ -54,4 +43,12 @@ function Portfolios() {
   )
 }
 
-export default Portfolios
+export const getStaticProps: GetStaticProps = async () => {
+  return {
+    props: {
+      portfolios: db.portfolios
+    }
+  }
+}
+
+export default PhotosPage

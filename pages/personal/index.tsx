@@ -1,32 +1,25 @@
-import React, { useEffect, useState } from 'react'
-import axios from 'axios'
+import React, {useState} from 'react'
 import Typist from 'react-typist'
-
-import Socialicons from '../components/Socialicons'
-import Layout from '../components/Layout'
-import GraphParticles from '../components/GraphParticles'
-import { Link } from 'react-router-dom'
+import Link from 'next/link'
+import {GetStaticProps, NextPage} from 'next'
+import GraphParticles from '../../src/components/GraphParticles'
+import Layout from '../../src/components/Layout'
+import db from '../../src/data/database'
 import pkg from '../../package.json'
 
-function Home() {
-  const [information, setInformation] = useState<any>('')
+const HomePage: NextPage<any> = ({information}) => {
   const [counter, setCounter] = useState(0)
-  useEffect(() => {
-    axios.get('/api/information')
-      .then(response => {
-        setInformation(response.data)
-      })
-  }, [])
+  
   return (
-    <Layout>
+    <Layout title="Avepha - Home">
       <div className="mi-home-area mi-padding-section">
         <GraphParticles/>
         <div className="container">
           <div className="row">
             <div className="col-lg-10 col-12">
               <div className="mi-header-image d-block d-sm-block d-lg-none">
-                <Link to="/">
-                  <img src={information.brandImage} alt="brandimage"/>
+                <Link href="/" >
+                  <a><img src={information.brandImage} alt="brandimage"/></a>
                 </Link>
               </div>
               <div className="mi-home-content">
@@ -51,7 +44,7 @@ function Home() {
                   </Typist>
                 </h2>
                 <p>{information.aboutContent}</p>
-                <Socialicons bordered/>
+                {/*<Socialicons bordered/>*/}
               </div>
             </div>
           </div>
@@ -64,4 +57,12 @@ function Home() {
   )
 }
 
-export default Home
+export const getStaticProps: GetStaticProps = async () => {
+  return {
+    props: {
+      information: db.information
+    }
+  }
+}
+
+export default HomePage

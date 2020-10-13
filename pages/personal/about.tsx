@@ -1,23 +1,17 @@
-import React, {useEffect, useState} from 'react'
-import axios from 'axios'
+import React, {useState} from 'react'
+import {GetStaticProps, NextPage} from 'next'
 import FsLightbox from 'fslightbox-react'
 import * as Icon from 'react-feather'
-import SectionTitle from '../components/section-title'
-import Layout from '../components/Layout'
-import SmallTitle from '../components/small-title'
+import SectionTitle from '../../src/components/section-title'
+import Layout from '../../src/components/Layout'
+import SmallTitle from '../../src/components/small-title'
+import db from '../../src/data/database'
 
-function About() {
+const About: NextPage<{information: any}> = ({information}) => {
   const [toggle, setToggle] = useState(false)
-  const [information, setInformation] = useState<any>('')
-  
-  useEffect(() => {
-    axios.get<any>('/api/information').then((response) => {
-      setInformation(response.data)
-    })
-  }, [])
   
   return (
-    <Layout>
+    <Layout title="Avepha - about">
       <div className="mi-about-area mi-section mi-padding-top">
         <div className="container">
           <SectionTitle title="About Me"/>
@@ -98,7 +92,6 @@ function About() {
           <SmallTitle title="Educational Qualifications" icon="book"/>
           <div className="mi-resume-wrapper">
             <div className="mi-resume mt-30">
-              
               <div className="mi-resume-summary">
                 <h6 className="mi-resume-year">2012-2015</h6>
               </div>
@@ -115,9 +108,16 @@ function About() {
           </div>
         </div>
       </div>
-    
     </Layout>
   )
+}
+
+export const getStaticProps: GetStaticProps = async () => {
+  return {
+    props: {
+      information: db.information
+    }
+  }
 }
 
 export default About

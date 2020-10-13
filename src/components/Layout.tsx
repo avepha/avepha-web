@@ -13,6 +13,10 @@ const Layout: React.FC<LayoutProps> = ({title, children}) => {
         <title>{title}</title>
         <meta charSet="utf-8"/>
         <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
+        <meta name="description" content="Farhan Poh-asae personal website and journeys"/>
+        <meta name="keywords" content="Farhan, avepha, nextjs"/>
+        <meta name="author" content="Farhan Poh-asae"/>
+        
         <meta property="og:title" content={title}/>
         <meta property="og:type" content="website"/>
         <meta property="og:og:description" content="Farhan Poh-asae personal website and journeys"/>

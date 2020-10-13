@@ -23,7 +23,7 @@ const PhotosPage:NextPage<{portfolios: any}> = ({portfolios}) => {
   }
   
   return (
-    <Layout title="Avepha - Experience">
+    <>
       <div className="mi-about mi-section mi-padding-top mi-padding-bottom">
         <div className="container">
           <SectionTitle title="Portfolios"/>
@@ -39,7 +39,7 @@ const PhotosPage:NextPage<{portfolios: any}> = ({portfolios}) => {
           )}
         </div>
       </div>
-    </Layout>
+    </>
   )
 }
 

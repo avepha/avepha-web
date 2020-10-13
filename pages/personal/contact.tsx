@@ -13,7 +13,7 @@ type ContactPage = {
 
 const ContactPage: NextPage<ContactPage> = ({phoneNumbers, emailAddress, address}) => {
   return (
-    <Layout title="Avepha - Contact">
+    <>
       <div className="mi-contact-area mi-section mi-padding-top mi-padding-bottom">
         <div className="container">
           <SectionTitle title="Contact Me"/>
@@ -64,7 +64,7 @@ const ContactPage: NextPage<ContactPage> = ({phoneNumbers, emailAddress, address
           </div>
         </div>
       </div>
-    </Layout>
+    </>
   )
 }
 

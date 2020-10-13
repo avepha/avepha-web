@@ -3,7 +3,6 @@ import Typist from 'react-typist'
 import Link from 'next/link'
 import {GetStaticProps, NextPage} from 'next'
 import GraphParticles from '../../src/components/GraphParticles'
-import Layout from '../../src/components/Layout'
 import db from '../../src/data/database'
 import pkg from '../../package.json'
 
@@ -11,14 +10,14 @@ const HomePage: NextPage<any> = ({information}) => {
   const [counter, setCounter] = useState(0)
   
   return (
-    <Layout title="Avepha - Home">
+    <>
       <div className="mi-home-area mi-padding-section">
         <GraphParticles/>
         <div className="container">
           <div className="row">
             <div className="col-lg-10 col-12">
               <div className="mi-header-image d-block d-sm-block d-lg-none">
-                <Link href="/" >
+                <Link href="/">
                   <a><img src={information.brandImage} alt="brandimage"/></a>
                 </Link>
               </div>
@@ -53,7 +52,8 @@ const HomePage: NextPage<any> = ({information}) => {
       <div className="position-absolute" style={{bottom: 0, right: 0, fontSize: 10}}>
         version: {pkg.version}
       </div>
-    </Layout>
+    
+    </>
   )
 }
 

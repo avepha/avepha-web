@@ -11,7 +11,7 @@ const About: NextPage<{information: any}> = ({information}) => {
   const [toggle, setToggle] = useState(false)
   
   return (
-    <Layout title="Avepha - about">
+    <>
       <div className="mi-about-area mi-section mi-padding-top">
         <div className="container">
           <SectionTitle title="About Me"/>
@@ -108,7 +108,7 @@ const About: NextPage<{information: any}> = ({information}) => {
           </div>
         </div>
       </div>
-    </Layout>
+    </>
   )
 }
 

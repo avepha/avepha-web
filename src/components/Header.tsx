@@ -1,5 +1,7 @@
 import React, {useState} from 'react'
 import ActiveLink from 'src/components/ActiveLink'
+import {faBars, faTimes} from '@fortawesome/free-solid-svg-icons'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 
 const Header: React.FC = () => {
   const [navigationToggle, setNavigationToggle] = useState(false)
@@ -11,8 +13,7 @@ const Header: React.FC = () => {
   return (
     <nav className={navigationToggle ? 'mi-header is-visible' : 'mi-header'}>
       <button onClick={handleNavigationToggle} className="mi-header-toggler">
-        {!navigationToggle ? '=' :
-          'x'}
+        {!navigationToggle ? <FontAwesomeIcon icon={faBars}/> : <FontAwesomeIcon icon={faTimes}/>}
       </button>
       <div className="mi-header-inner">
         <div className="mi-header-image d-none d-md-none d-lg-block">
@@ -21,7 +22,9 @@ const Header: React.FC = () => {
             <a><img src="/images/brand-image.jpg" alt="brandimage"/></a>
           </ActiveLink>
         </div>
-        <ul className="mi-header-menu">
+        <ul className="mi-header-menu" onClick={() => {
+          setTimeout(() => handleNavigationToggle(), 500)
+        }}>
           <li>
             <ActiveLink href="/personal"><a>Home</a></ActiveLink>
           </li>

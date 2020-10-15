@@ -1,17 +1,32 @@
 import React from 'react'
-import {NextPage} from 'next'
+import {GetServerSideProps, NextPage} from 'next'
 import SectionTitle from '../../src/components/section-title'
+import db from '../../src/data/database'
 
-const ExperiencePage: NextPage = () => {
+import {WorkingExperience} from '../../src/data/types'
+import ExperienceView from '../../src/components/ExperienceView'
+
+const ExperiencePage: NextPage<{ experiences: [WorkingExperience] }> = ({experiences}) => {
   return (
-    <>
-      <div className="mi-section mi-padding-top">
-        <div className="container">
-          <SectionTitle title="Working Experience"/>
-        </div>
+    <div className="mi-section mi-padding-top">
+      <div className="container">
+        <SectionTitle title="Experience"/>
+        {
+          experiences && experiences.map((experience) => {
+            return <ExperienceView key={experience.id} experience={experience}/>
+          })
+        }
       </div>
-    </>
+    </div>
   )
+}
+
+export const getServerSideProps: GetServerSideProps = async () => {
+  return {
+    props: {
+      experiences: db.experiences
+    }
+  }
 }
 
 export default ExperiencePage

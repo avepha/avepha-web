@@ -90,7 +90,7 @@ const About: NextPage<{ information: any }> = ({information}) => {
           </div>
         </div>
       </div>
-      <div className="mi-service-area mi-section mi-padding-top mb-3">
+      <div className="mi-service-area mi-section mi-padding-bottom pt-5">
         <div className="container">
           <SmallTitle title="Educational Qualifications" icon="book"/>
           <div className="mi-resume-wrapper">

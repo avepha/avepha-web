@@ -1,0 +1,2 @@
+- Implemented communication system using RS-485 and Ethernet modules using ATMEGA2560 and Raspberry PI.
+- Implemented HMI using Java AWT on touch screen display in kiosk mode.

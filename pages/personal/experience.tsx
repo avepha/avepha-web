@@ -12,8 +12,8 @@ const ExperiencePage: NextPage<{ experiences: [WorkingExperience] }> = ({experie
       <div className="container">
         <SectionTitle title="Experience"/>
         {
-          experiences && experiences.map((experience) => {
-            return <ExperienceView key={experience.id} experience={experience}/>
+          experiences && experiences.map((experience, index) => {
+            return <ExperienceView key={index} experience={experience}/>
           })
         }
       </div>

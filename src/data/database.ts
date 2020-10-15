@@ -30,73 +30,69 @@ export default {
   },
   experiences: [
     {
-      id: 0,
-      topic: 'Game engine developer',
-      icon: 'briefcase',
-      details: [
-        {
-          id: 1,
-          year: '2016',
-          position: 'Alpha Wolf Cyber Range System',
-          company: 'Agro Intelligent',
-          mdFile: 'cyber-range-system.md',
-        },
-      ]
-    },
-    {
-      id: 1,
       topic: 'Embedded System Developer',
       icon: 'briefcase',
       details: [
         {
-          id: 1,
           year: '2015 - 2016',
           position: 'Hydroponics Timer and Solution Controller',
           company: 'Agro Intelligent',
           mdFile: 'hydroponic-timer-solution-controller.md',
         },
         {
-          id: 2,
-          year: '2015 (Internship)',
+          year: '2015 - (Internship)',
           position: 'Screen printing machine',
           company: 'Internship',
           mdFile: 'screen-printing-machine.md',
-        }
+        },
       ]
     },
     {
-      id: 2,
       topic: 'Embedded system & Full stack developer',
       icon: 'briefcase',
       details: [
         {
-          id: 1,
           year: '2016 - 2020',
           position: '4 years of development smart farming device.',
           company: 'Agro Intelligent',
-          mdFile: '4-year-of-development-smart-farming-device.md',
+          mdFile: 'smartgrobot.md',
         },
         {
-          id: 2,
           year: '2017-2018',
           position: 'Volume Measurement Network smart farming device',
           company: 'Agro Intelligent',
           mdFile: 'volumn-measurement-network.md',
         },
+        {
+          year: '2016-2017',
+          position: 'Full function vertical hydroponic system in container',
+          company: 'Agro Intelligent',
+          mdFile: 'vertical-hydroponic-system-in-container.md',
+        },
       ]
     },
     {
-      id: 3,
       topic: 'Back-end developer',
       icon: 'briefcase',
       details: [
         {
-          id: 1,
           year: '2018 - 2018',
           position: 'Back-end Developer for Thailand well-known social media platform Blockdit',
           company: 'LTMAN',
-          mdFile: 'back-end-developer-at-blockdit.md',
+          mdFile: 'blockdit.md',
         }
+      ]
+    },
+    {
+      topic: 'Game engine developer',
+      icon: 'briefcase',
+      details: [
+        {
+          year: '2015-2016',
+          position: 'Alpha Wolf Cyber Range System',
+          company: 'Alpha Wolf',
+          mdFile: 'cyber-range-system.md',
+        },
       ]
     },
   ]

@@ -11,8 +11,8 @@ const ExperienceView: React.FC<{ experience: WorkingExperience }> = ({experience
         <SmallTitle title={topic} icon={icon}/>
         <div className="mi-resume-wrapper">
           {
-            details.map((detail) => {
-              return <ExperienceDetailView detail={detail} key={detail.id}/>
+            details.map((detail, index) => {
+              return <ExperienceDetailView detail={detail} key={index}/>
             })
           }
         </div>

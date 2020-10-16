@@ -20,6 +20,8 @@
 - Implemented **Wi-Fi management system** for instant changing between AP and STA mode.
 - Implemented single page web application using **Vue 2(ES6)**, vuex, vue-animation
 
+<span id="sg_model3"> </span>
+
 **[SG - Model 3]** [See more](http://www.google.com)
 - Experienced with **Raspberry Pi Zero** W to use **NodeJS(TypeScripts)** for local web service, High level feature and serial port communication system(refactor).
 - Experienced with **GraphQL query language framework** for both back-end and front-end(Rework).

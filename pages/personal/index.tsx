@@ -49,8 +49,9 @@ const HomePage: NextPage<{information: any}> = ({information}) => {
           </div>
         </div>
       </div>
-      <div className="position-absolute" style={{bottom: 0, right: '3ch', fontSize: 15}}>
-        v.{pkg.version}
+      <div className="build-version">
+        <img src="https://api.iconify.design/logos-nextjs.svg?height=35" className="mr-3" alt="nextjs"/>
+        <span>build: {pkg.version}</span>
       </div>
     </>
   )

@@ -6,6 +6,14 @@
   color: #53ff62;
 }
 
+.build-version {
+  color: #9a9a9a;
+  position: absolute;
+  bottom: 0;
+  right: 2ch;
+  font-size: 1rem;
+}
+
 .mi-home{
   &-area{
     display: flex;

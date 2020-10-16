@@ -53,6 +53,12 @@ export default {
       details: [
         {
           year: '2016 - 2020',
+          position: 'Electrical Conductivity Control for indoor plant factory.(JP)',
+          company: 'Agro Intelligent',
+          mdFile: 'conductivity-control.md',
+        },
+        {
+          year: '2016 - 2020',
           position: '4 years of development smart farming device.',
           company: 'Agro Intelligent',
           mdFile: 'smartgrobot.md',

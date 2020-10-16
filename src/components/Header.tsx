@@ -2,6 +2,7 @@ import React, {useRef, useState} from 'react'
 import ActiveLink from 'src/components/ActiveLink'
 import dynamic from 'next/dynamic'
 import useClickOutSide from 'src/lib/hooks/useOutside'
+import pkg from '../../package.json'
 // @ts-ignore
 const LineIcon: any = dynamic(() => import ('react-lineicons'), {ssr: false})
 
@@ -17,7 +18,7 @@ const Header: React.FC = () => {
   useClickOutSide(headerRef, () => {
     setNavigationToggle(false)
   })
-  
+
   return (
     <nav ref={headerRef} className={navigationToggle ? 'mi-header is-visible' : 'mi-header'}>
       <button name="nav-toggle" onClick={handleNavigationToggle} className="mi-header-toggler">

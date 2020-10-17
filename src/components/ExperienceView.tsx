@@ -1,6 +1,6 @@
 import React from 'react'
 import {WorkingExperience} from 'src/data/types'
-import SmallTitle from 'src/components/small-title'
+import SmallTitle from 'src/components/SmallTitle'
 import ExperienceDetailView from 'src/components/ExperienceDetailView'
 
 const ExperienceView: React.FC<{ experience: WorkingExperience }> = ({experience}) => {

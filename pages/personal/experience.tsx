@@ -1,10 +1,10 @@
 import React from 'react'
 import {GetServerSideProps, NextPage} from 'next'
-import SectionTitle from '../../src/components/section-title'
-import db from '../../src/data/database'
+import SectionTitle from 'src/components/SectionTitle'
+import db from 'src/data/database'
 
-import {WorkingExperience} from '../../src/data/types'
-import ExperienceView from '../../src/components/ExperienceView'
+import {WorkingExperience} from 'src/data/types'
+import ExperienceView from 'src/components/ExperienceView'
 
 const ExperiencePage: NextPage<{ experiences: [WorkingExperience] }> = ({experiences}) => {
   return (

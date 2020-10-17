@@ -48,7 +48,7 @@ const Header: React.FC = () => {
             <ActiveLink href="/personal/experience"><a>Working Experience</a></ActiveLink>
           </li>
           <li>
-            <ActiveLink href="/personal/photos"><a>Photos</a></ActiveLink>
+            <ActiveLink href="/personal/projects"><a>Projects</a></ActiveLink>
           </li>
           <li>
             <ActiveLink href="/personal/contact"><a>Contact</a></ActiveLink>

@@ -1,6 +1,6 @@
 import React from 'react'
 import {NextPage} from 'next'
-import SectionTitle from '../../src/components/section-title'
+import SectionTitle from 'src/components/SectionTitle'
 
 const SkillPage: NextPage = () => {
   return (

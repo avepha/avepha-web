@@ -1,8 +1,8 @@
 import React from 'react'
 import {GetStaticProps, NextPage} from 'next'
 import * as Icon from 'react-feather'
-import SectionTitle from '../../src/components/section-title'
-import db from '../../src/data/database'
+import SectionTitle from 'src/components/SectionTitle'
+import db from 'src/data/database'
 
 type ContactPage = {
   phoneNumbers: any[]

@@ -8,10 +8,10 @@ const LineIcon: any = dynamic(() => import ('react-lineicons'), {ssr: false})
 
 const ExperienceDetailView: React.FC<{ detail: WorkingExperienceDetail }> = ({detail}) => {
   const {company, position, mdFile, year} = detail
-  const [mdString, setMdString] = useState('')
+  const [content, setContent] = useState('')
   useEffect(() => {
-    axios.get(`/md/${mdFile}`).then((data) => {
-      setMdString(data.data)
+    axios.get(`/md/experiences/${mdFile}`).then((data) => {
+      setContent(data.data)
     })
   })
   
@@ -23,7 +23,7 @@ const ExperienceDetailView: React.FC<{ detail: WorkingExperienceDetail }> = ({de
         <div className="mi-resume-details">
           <h5>{position}</h5>
           <h6 className="mi-resume-company"><LineIcon name="map-marker"/> {company}</h6>
-          <ReactMarkdown source={mdString} escapeHtml={false} />
+          <ReactMarkdown source={content} escapeHtml={false} />
         </div>
       </div>
   )

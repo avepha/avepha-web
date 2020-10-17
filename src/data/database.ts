@@ -101,5 +101,97 @@ export default {
         },
       ]
     },
+  ],
+  projects: [
+    {
+      id: 1,
+      title: 'Smart Grobot - Model 3',
+      featuredImage: '/images/blog-image-1.jpg',
+      mdFile: 'blockdit.md',
+      createDay: '20',
+      createMonth: 'February',
+      createYear: '2020'
+    },
+    {
+      id: 2,
+      title: 'Smart Grobot - Model 2',
+      featuredImage: '/images/blog-image-1.jpg',
+      mdFile: 'blockdit.md',
+      createDay: '20',
+      createMonth: 'February',
+      createYear: '2020'
+    },
+    {
+      id: 3,
+      title: 'Smart Grobot - Model 1',
+      featuredImage: '/images/blog-image-1.jpg',
+      mdFile: 'blockdit.md',
+      createDay: '20',
+      createMonth: 'February',
+      createYear: '2020'
+    },
+    {
+      id: 4,
+      title: 'Cyber Range Dashboard',
+      featuredImage: '/images/blog-image-1.jpg',
+      mdFile: 'blockdit.md',
+      createDay: '20',
+      createMonth: 'February',
+      createYear: '2020'
+    },
+    {
+      id: 5,
+      title: 'Hydroponics Timer and Solution Controller',
+      featuredImage: '/images/blog-image-1.jpg',
+      mdFile: 'blockdit.md',
+      createDay: '20',
+      createMonth: 'February',
+      createYear: '2020'
+    },
+    {
+      id: 6,
+      title: 'Hanmo Conductivity control - Model 1',
+      featuredImage: '/images/blog-image-1.jpg',
+      mdFile: 'blockdit.md',
+      createDay: '20',
+      createMonth: 'February',
+      createYear: '2020'
+    },
+    {
+      id: 7,
+      title: 'Hanmo Conductivity control - Model 2',
+      featuredImage: '/images/blog-image-1.jpg',
+      mdFile: 'blockdit.md',
+      createDay: '20',
+      createMonth: 'February',
+      createYear: '2020'
+    },
+    {
+      id: 8,
+      title: 'Volume Measurement Network',
+      featuredImage: '/images/blog-image-1.jpg',
+      mdFile: 'blockdit.md',
+      createDay: '20',
+      createMonth: 'February',
+      createYear: '2020'
+    },
+    {
+      id: 9,
+      title: 'Vertical hydroponic system',
+      featuredImage: '/images/blog-image-1.jpg',
+      mdFile: 'blockdit.md',
+      createDay: '20',
+      createMonth: 'February',
+      createYear: '2020'
+    },
+    {
+      id: 10,
+      title: 'Mini Vertical hydroponic system',
+      featuredImage: '/images/blog-image-1.jpg',
+      mdFile: 'blockdit.md',
+      createDay: '20',
+      createMonth: 'February',
+      createYear: '2020'
+    }
   ]
 }

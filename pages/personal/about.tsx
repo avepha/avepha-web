@@ -3,9 +3,9 @@ import {GetStaticProps, NextPage} from 'next'
 import FsLightbox from 'fslightbox-react'
 import * as Icon from 'react-feather'
 
-import SectionTitle from '../../src/components/section-title'
-import SmallTitle from '../../src/components/small-title'
-import db from '../../src/data/database'
+import SectionTitle from 'src/components/SectionTitle'
+import SmallTitle from 'src/components/SmallTitle'
+import db from 'src/data/database'
 
 const About: NextPage<{ information: any }> = ({information}) => {
   const [toggle, setToggle] = useState(false)

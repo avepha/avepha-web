@@ -16,7 +16,7 @@ export default {
       behance: '',
       linkedin: '',
       dribbble: '',
-      github: 'https://github.com/avepha'
+      github: 'https://github.com/avepha/avepha-web'
     },
     brandImage: '/images/brand-image.jpg',
     aboutImage: '/images/about-image.jpg',

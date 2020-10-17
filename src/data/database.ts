@@ -178,7 +178,7 @@ export default {
     {
       id: 'min-vertical-hydroponic',
       title: 'Mini Vertical hydroponic system',
-      featuredImage: '/images/blog-image-1.jpg',
+      featuredImage: '/images/project-mini-vertical.jpg',
       mdFile: 'empty.md',
       createDay: '20',
       createMonth: 'February',

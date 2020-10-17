@@ -104,94 +104,94 @@ export default {
   ],
   projects: [
     {
-      id: 1,
+      id: 'sg-model-1',
       title: 'Smart Grobot - Model 3',
-      featuredImage: '/images/blog-image-1.jpg',
-      mdFile: 'blockdit.md',
+      featuredImage: '/images/project-sg-model-3.jpg',
+      mdFile: 'empty.md',
       createDay: '20',
       createMonth: 'February',
       createYear: '2020'
     },
     {
-      id: 2,
+      id: 'sg-model-2',
       title: 'Smart Grobot - Model 2',
-      featuredImage: '/images/blog-image-1.jpg',
-      mdFile: 'blockdit.md',
+      featuredImage: '/images/project-sg-model-2.jpg',
+      mdFile: 'empty.md',
       createDay: '20',
       createMonth: 'February',
       createYear: '2020'
     },
     {
-      id: 3,
+      id: 'sg-model-1',
       title: 'Smart Grobot - Model 1',
-      featuredImage: '/images/blog-image-1.jpg',
-      mdFile: 'blockdit.md',
+      featuredImage: '/images/project-sg-model-1.jpg',
+      mdFile: 'empty.md',
       createDay: '20',
       createMonth: 'February',
       createYear: '2020'
     },
     {
-      id: 4,
-      title: 'Cyber Range Dashboard',
-      featuredImage: '/images/blog-image-1.jpg',
-      mdFile: 'blockdit.md',
-      createDay: '20',
-      createMonth: 'February',
-      createYear: '2020'
-    },
-    {
-      id: 5,
+      id: 'hydroponic-timer',
       title: 'Hydroponics Timer and Solution Controller',
       featuredImage: '/images/blog-image-1.jpg',
-      mdFile: 'blockdit.md',
+      mdFile: 'empty.md',
       createDay: '20',
       createMonth: 'February',
       createYear: '2020'
     },
     {
-      id: 6,
+      id: 'hanmo-model-1',
       title: 'Hanmo Conductivity control - Model 1',
       featuredImage: '/images/blog-image-1.jpg',
-      mdFile: 'blockdit.md',
+      mdFile: 'empty.md',
       createDay: '20',
       createMonth: 'February',
       createYear: '2020'
     },
     {
-      id: 7,
+      id: 'hanmo-model-2',
       title: 'Hanmo Conductivity control - Model 2',
       featuredImage: '/images/blog-image-1.jpg',
-      mdFile: 'blockdit.md',
+      mdFile: 'empty.md',
       createDay: '20',
       createMonth: 'February',
       createYear: '2020'
     },
     {
-      id: 8,
+      id: 'volume-measurement-network',
       title: 'Volume Measurement Network',
       featuredImage: '/images/blog-image-1.jpg',
-      mdFile: 'blockdit.md',
+      mdFile: 'empty.md',
       createDay: '20',
       createMonth: 'February',
       createYear: '2020'
     },
     {
-      id: 9,
+      id: 'vertical-hydroponic',
       title: 'Vertical hydroponic system',
       featuredImage: '/images/blog-image-1.jpg',
-      mdFile: 'blockdit.md',
+      mdFile: 'empty.md',
       createDay: '20',
       createMonth: 'February',
       createYear: '2020'
     },
     {
-      id: 10,
+      id: 'min-vertical-hydroponic',
       title: 'Mini Vertical hydroponic system',
       featuredImage: '/images/blog-image-1.jpg',
-      mdFile: 'blockdit.md',
+      mdFile: 'empty.md',
       createDay: '20',
       createMonth: 'February',
       createYear: '2020'
-    }
+    },
+    {
+      id: 'cyber-range',
+      title: 'Cyber Range Dashboard',
+      featuredImage: '/images/project-cyber-range.gif',
+      mdFile: 'empty.md',
+      createDay: '20',
+      createMonth: 'February',
+      createYear: '2020'
+    },
   ]
 }

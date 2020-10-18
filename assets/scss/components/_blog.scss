@@ -3,7 +3,7 @@
  */
 
 .mi-blog {
-  background: lighten($color-bg-body, 5);
+  background: lighten($color-bg-body, 0);
   padding: 15px;
 
   &-image {
@@ -53,12 +53,12 @@
 
       a {
         transition: $transition;
-        color: $color-heading;
+        color: $color-bg-dark;
         display: block;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-
+        text-decoration: none;
         &:hover {
           color: $color-theme;
         }
@@ -68,7 +68,7 @@
 
   &:hover &-image {
     img {
-      transform: scale(1.15);
+      transform: scale(1.2);
     }
   }
 }

@@ -2,7 +2,6 @@ import React, {useRef, useState} from 'react'
 import ActiveLink from 'src/components/ActiveLink'
 import dynamic from 'next/dynamic'
 import useClickOutSide from 'src/lib/hooks/useOutside'
-import pkg from '../../package.json'
 // @ts-ignore
 const LineIcon: any = dynamic(() => import ('react-lineicons'), {ssr: false})
 

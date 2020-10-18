@@ -2,10 +2,10 @@ import React, {useState} from 'react'
 import Typist from 'react-typist'
 import Link from 'next/link'
 import {GetStaticProps, NextPage} from 'next'
-import SocialIcons from '../../src/components/SocialIcons'
-import GraphParticles from '../../src/components/GraphParticles'
-import db from '../../src/data/database'
-import pkg from '../../package.json'
+import SocialIcons from 'src/components/SocialIcons'
+import GraphParticles from 'src/components/GraphParticles'
+import db from 'src/data/database'
+import pkg from 'package.json'
 
 const HomePage: NextPage<{information: any}> = ({information}) => {
   const [counter, setCounter] = useState(0)

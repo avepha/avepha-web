@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import Typist from 'react-typist'
 import Link from 'next/link'
 import {GetStaticProps, NextPage} from 'next'

@@ -1,11 +1,27 @@
-import React, {useRef, useState} from 'react'
+import React, {useEffect, useRef, useState} from 'react'
 import ActiveLink from 'src/components/ActiveLink'
 import dynamic from 'next/dynamic'
 import useClickOutSide from 'src/lib/hooks/useOutside'
+import {NotificationManager} from 'src/components/notifications'
+import pkg from 'package.json'
 // @ts-ignore
 const LineIcon: any = dynamic(() => import ('react-lineicons'), {ssr: false})
 
 const Header: React.FC = () => {
+  useEffect(() => {
+    NotificationManager.success({
+      message: 'The project currently under development. there are a lot more things to do ;)',
+      title: 'Avepha - Notice',
+      timeOut: 4000,
+    })
+    setTimeout(() => {
+      NotificationManager.success({
+        message: `Build Version: ${pkg.version}`,
+        timeOut: 3000
+      })
+    }, 100)
+  }, [])
+  
   const headerRef = useRef(null)
   
   const [navigationToggle, setNavigationToggle] = useState(false)

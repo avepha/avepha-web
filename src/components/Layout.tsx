@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../components/Header'
 import Head from 'next/head'
+import {NotificationContainer} from 'src/components/notifications'
 
 type LayoutProps = {
   title: string
@@ -23,7 +24,8 @@ const Layout: React.FC<LayoutProps> = ({title, children}) => {
         <meta property="og:url" content="https://avepha.me/personal"/>
         <meta property="og:image" content="https://avepha-web.s3.ap-south-1.amazonaws.com/portrait-photo-300x300.jpg"/>
       </Head>
-      <div className="mi-wrapper">
+      <NotificationContainer />
+      <div className="mi-wrapper background-container">
         <Header/>
         {children}
       </div>

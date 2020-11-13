@@ -3,7 +3,7 @@ import {TProject} from 'src/data/types'
 import Link from 'next/link'
 
 const Project: React.FC<{ data: TProject }> = (props) => {
-  const {id, featuredImage, title, createDay, createMonth} = props.data
+  const {id, featuredImage, title, createDay, createMonth, createYear} = props.data
   const getShortMonth = (month: string) => {
     return month.slice(0, 3)
   }
@@ -19,8 +19,8 @@ const Project: React.FC<{ data: TProject }> = (props) => {
           <img src={featuredImage} alt={title}/>
         </Link>
         <div className="mi-blog-date">
-          <span className="date">{createDay}</span>
-          <span className="month">{getShortMonth(createMonth)}</span>
+          <span className="date">{getShortMonth(createMonth)}</span>
+          <span className="month">{createYear}</span>
         </div>
       </div>
       <div className="mi-blog-content">

@@ -145,8 +145,8 @@ export default {
       title: 'Smart Grobot - Model 3',
       featuredImage: '/images/project-sg-model-3.jpg',
       mdFile: 'empty.md',
-      createDay: '20',
-      createMonth: 'February',
+      createDay: '01',
+      createMonth: 'October',
       createYear: '2020'
     },
     {
@@ -156,16 +156,16 @@ export default {
       mdFile: 'empty.md',
       createDay: '20',
       createMonth: 'February',
-      createYear: '2020'
+      createYear: '2018'
     },
     {
       id: 'sg-model-1',
       title: 'Smart Grobot - Model 1',
       featuredImage: '/images/project-sg-model-1.jpg',
       mdFile: 'empty.md',
-      createDay: '20',
-      createMonth: 'February',
-      createYear: '2020'
+      createDay: '10',
+      createMonth: 'June',
+      createYear: '2016'
     },
     {
       id: 'hydroponic-timer',
@@ -173,8 +173,8 @@ export default {
       featuredImage: '/images/timer-solution-control.jpg',
       mdFile: 'empty.md',
       createDay: '20',
-      createMonth: 'February',
-      createYear: '2020'
+      createMonth: 'May',
+      createYear: '2019'
     },
     {
       id: 'min-vertical-hydroponic',
@@ -182,8 +182,8 @@ export default {
       featuredImage: '/images/mini-vertical-hydroponics.jpg',
       mdFile: 'empty.md',
       createDay: '20',
-      createMonth: 'February',
-      createYear: '2020'
+      createMonth: 'Jan',
+      createYear: '2017'
     },
     {
       id: 'hanmo-model-1',
@@ -191,8 +191,8 @@ export default {
       featuredImage: '/images/hanmo-model-1.jpg',
       mdFile: 'empty.md',
       createDay: '20',
-      createMonth: 'February',
-      createYear: '2020'
+      createMonth: 'Oct',
+      createYear: '2016'
     },
     {
       id: 'hanmo-model-2',
@@ -200,35 +200,17 @@ export default {
       featuredImage: '/images/hanmo-model-2.jpg',
       mdFile: 'empty.md',
       createDay: '20',
-      createMonth: 'February',
-      createYear: '2020'
+      createMonth: 'Nov',
+      createYear: '2019'
     },
-    // {
-    //   id: 'volume-measurement-network',
-    //   title: 'Volume Measurement Network',
-    //   featuredImage: '/images/blog-image-1.jpg',
-    //   mdFile: 'empty.md',
-    //   createDay: '20',
-    //   createMonth: 'February',
-    //   createYear: '2020'
-    // },
-    // {
-    //   id: 'vertical-hydroponic',
-    //   title: 'Vertical hydroponic system',
-    //   featuredImage: '/images/blog-image-1.jpg',
-    //   mdFile: 'empty.md',
-    //   createDay: '20',
-    //   createMonth: 'February',
-    //   createYear: '2020'
-    // },
     {
       id: 'cyber-range',
       title: 'Cyber Range Dashboard',
       featuredImage: '/images/project-cyber-range.gif',
       mdFile: 'empty.md',
       createDay: '20',
-      createMonth: 'February',
-      createYear: '2020'
+      createMonth: 'Sep',
+      createYear: '2015'
     },
   ]
 }

@@ -1,5 +1,7 @@
 import React from 'react'
-import Particles from 'react-particles-js'
+import dynamic from 'next/dynamic'
+// @ts-ignore
+const Particles: any = dynamic(() => import ('react-particles-js'), {ssr: false})
 
 const GraphParticles = () => {
   const paramConfig: any = {

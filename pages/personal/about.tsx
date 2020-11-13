@@ -80,10 +80,7 @@ const About: NextPage<{ information: any }> = ({information}) => {
                   )}
                 </ul>
                 <a href={information.cvfile} className="mi-button">
-                  CV
-                </a>
-                <a href={information.cvfile} className="mi-button ml-3">
-                  Resume
+                  Download CV
                 </a>
               </div>
             </div>

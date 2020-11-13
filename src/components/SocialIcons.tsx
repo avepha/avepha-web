@@ -12,6 +12,11 @@ const SocialIcons: React.FC<SocialIconsProps> = (props) => {
   const {socialLinks, bordered} = props
   return (
     <ul className={bordered ? 'mi-socialicons mi-socialicons-bordered' : 'mi-socialicons'}>
+      {!socialLinks.github ? null : <li>
+        <a rel="noopener noreferrer" target="_blank" href={socialLinks.github}>
+          <LineIcon name="github"/>
+        </a>
+      </li>}
       {!socialLinks.facebook ? null : <li>
         <a rel="noopener noreferrer" target="_blank"
            href={socialLinks.facebook}>
@@ -37,18 +42,13 @@ const SocialIcons: React.FC<SocialIconsProps> = (props) => {
       {!socialLinks.linkedin ? null : <li>
         <a rel="noopener noreferrer" target="_blank"
            href={socialLinks.linkedin}>
-          {/*<LineIcon name="linkedin"/>*/}
+          <LineIcon name="linkedin"/>
         </a>
       </li>}
       {!socialLinks.dribbble ? null : <li>
         <a rel="noopener noreferrer" target="_blank"
            href={socialLinks.dribbble}>
           {/*<LineIcon name="dribbble"/>*/}
-        </a>
-      </li>}
-      {!socialLinks.github ? null : <li>
-        <a rel="noopener noreferrer" target="_blank" href={socialLinks.github}>
-          <LineIcon name="github"/>
         </a>
       </li>}
     </ul>

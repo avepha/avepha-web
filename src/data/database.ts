@@ -3,7 +3,8 @@ export default {
     name: 'Farhan Poh-Asae',
     aboutContent: 'Software engineer with 4 years of experience in programming, Front-end, Back-end, Cloud and Embedded system in various projects.',
     age: 26,
-    phone: '+669-3790-0099',
+    // phone: '+669-3790-0099',
+    phone: '-',
     nationality: 'Thailand',
     language: 'English, Thai, Bahasa Malayu',
     email: 'farhan.abuhazan@gmail.com',
@@ -14,17 +15,18 @@ export default {
       twitter: '',
       pinterest: '',
       behance: '',
-      linkedin: '',
+      linkedin: 'https://www.linkedin.com/in/fa-dev',
       dribbble: '',
       github: 'https://github.com/avepha/avepha-web'
     },
     brandImage: '/images/brand-image.jpg',
     aboutImage: '/images/about-image.jpg',
     aboutImageLg: '/images/about-image-lg.jpg',
-    cvfile: '/files/empty.pdf'
+    cvfile: '/files/cv.pdf'
   },
   contactInfo: {
-    phoneNumbers: ['+669-3730-0099', '+666-1521-3030'],
+    // phoneNumbers: ['+669-3730-0099', '+666-1521-3030'],
+    phoneNumbers: ['-'],
     emailAddress: ['farhan.abuhazan@gmail.com'],
     address: 'Phayathai, Ratchathewi Bangkok, Thailand 10400'
   },
@@ -133,43 +135,7 @@ export default {
     {
       id: 'hydroponic-timer',
       title: 'Hydroponics Timer and Solution Controller',
-      featuredImage: '/images/blog-image-1.jpg',
-      mdFile: 'empty.md',
-      createDay: '20',
-      createMonth: 'February',
-      createYear: '2020'
-    },
-    {
-      id: 'hanmo-model-1',
-      title: 'Hanmo Conductivity control - Model 1',
-      featuredImage: '/images/blog-image-1.jpg',
-      mdFile: 'empty.md',
-      createDay: '20',
-      createMonth: 'February',
-      createYear: '2020'
-    },
-    {
-      id: 'hanmo-model-2',
-      title: 'Hanmo Conductivity control - Model 2',
-      featuredImage: '/images/blog-image-1.jpg',
-      mdFile: 'empty.md',
-      createDay: '20',
-      createMonth: 'February',
-      createYear: '2020'
-    },
-    {
-      id: 'volume-measurement-network',
-      title: 'Volume Measurement Network',
-      featuredImage: '/images/blog-image-1.jpg',
-      mdFile: 'empty.md',
-      createDay: '20',
-      createMonth: 'February',
-      createYear: '2020'
-    },
-    {
-      id: 'vertical-hydroponic',
-      title: 'Vertical hydroponic system',
-      featuredImage: '/images/blog-image-1.jpg',
+      featuredImage: '/images/timer-solution-control.jpg',
       mdFile: 'empty.md',
       createDay: '20',
       createMonth: 'February',
@@ -178,12 +144,48 @@ export default {
     {
       id: 'min-vertical-hydroponic',
       title: 'Mini Vertical hydroponic system',
-      featuredImage: '/images/project-mini-vertical.jpg',
+      featuredImage: '/images/mini-vertical-hydroponics.jpg',
       mdFile: 'empty.md',
       createDay: '20',
       createMonth: 'February',
       createYear: '2020'
     },
+    {
+      id: 'hanmo-model-1',
+      title: 'Hanmo Conductivity control - Model 1',
+      featuredImage: '/images/hanmo-model-1.jpg',
+      mdFile: 'empty.md',
+      createDay: '20',
+      createMonth: 'February',
+      createYear: '2020'
+    },
+    {
+      id: 'hanmo-model-2',
+      title: 'Hanmo Conductivity control - Model 2',
+      featuredImage: '/images/hanmo-model-2.jpg',
+      mdFile: 'empty.md',
+      createDay: '20',
+      createMonth: 'February',
+      createYear: '2020'
+    },
+    // {
+    //   id: 'volume-measurement-network',
+    //   title: 'Volume Measurement Network',
+    //   featuredImage: '/images/blog-image-1.jpg',
+    //   mdFile: 'empty.md',
+    //   createDay: '20',
+    //   createMonth: 'February',
+    //   createYear: '2020'
+    // },
+    // {
+    //   id: 'vertical-hydroponic',
+    //   title: 'Vertical hydroponic system',
+    //   featuredImage: '/images/blog-image-1.jpg',
+    //   mdFile: 'empty.md',
+    //   createDay: '20',
+    //   createMonth: 'February',
+    //   createYear: '2020'
+    // },
     {
       id: 'cyber-range',
       title: 'Cyber Range Dashboard',

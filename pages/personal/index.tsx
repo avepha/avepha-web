@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, {useState} from 'react'
 import Typist from 'react-typist'
 import Link from 'next/link'
 import {GetStaticProps, NextPage} from 'next'
@@ -7,13 +7,13 @@ import GraphParticles from 'src/components/GraphParticles'
 import db from 'src/data/database'
 import pkg from 'package.json'
 
-const HomePage: NextPage<{information: any}> = ({information}) => {
+const HomePage: NextPage<{ information: any }> = ({information}) => {
   const [counter, setCounter] = useState(0)
   const {socialLinks} = information
   return (
     <>
+      <GraphParticles/>
       <div className="mi-home-area mi-padding-section">
-        <GraphParticles/>
         <div className="container">
           <div className="row">
             <div className="col-lg-10 col-12">
@@ -23,10 +23,10 @@ const HomePage: NextPage<{information: any}> = ({information}) => {
                 </Link>
               </div>
               <div className="mi-home-content">
-                <h1>
-                  <span className="color-theme-dark">{information.name}</span>
+                <h1 className="color-theme-dark">
+                  {information.name}
                 </h1>
-                <h2 className="color-body">
+                <h1 className="color-body font-weight-normal">
                   <Typist key={counter} onTypingDone={() => setCounter(counter + 1)} cursor={{
                     blink: true,
                     element: '_',
@@ -41,7 +41,7 @@ const HomePage: NextPage<{information: any}> = ({information}) => {
                     <Typist.Delay ms={5000}/>
                     <Typist.Backspace count={17} delay={100}/>
                   </Typist>
-                </h2>
+                </h1>
                 <p>{information.aboutContent}</p>
                 <SocialIcons bordered socialLinks={socialLinks}/>
               </div>

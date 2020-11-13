@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useState} from 'react'
 import {NextPage} from 'next'
 import {useRouter} from 'next/router'
 import * as gtag from 'src/lib/gtag'
@@ -19,7 +19,7 @@ const App: NextPage<any> = ({Component, pageProps}) => {
       gtag.pageview(url)
     })
     return () => {
-      router.events.on('routeChangeComplete', (url) => {
+      router.events.off('routeChangeComplete', (url) => {
         gtag.pageview(url)
       })
     }
@@ -27,7 +27,7 @@ const App: NextPage<any> = ({Component, pageProps}) => {
   
   return (
     <>
-      <DevModal />
+      <DevModal/>
       <Layout title="Avepha - Home">
         <Component {...pageProps} />
       </Layout>

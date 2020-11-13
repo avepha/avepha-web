@@ -20,3 +20,10 @@ export type TProject = {
   createMonth: string,
   createYear: string
 }
+
+export type Skill = {
+  backend: {name: string, src: string}[],
+  frontend: {name: string, src: string}[],
+  programming: {name: string, src: string}[],
+  others: {name: string, src: string}[],
+}

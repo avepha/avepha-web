@@ -104,6 +104,41 @@ export default {
       ]
     },
   ],
+  skill: {
+    programming: [
+      {name: 'Javascript(ES5-2020)', src: ''},
+      {name: 'Typescript', src: ''},
+      {name: 'C/C++', src: ''},
+      {name: 'Golang', src: ''},
+      {name: 'Python', src: ''},
+      {name: 'Java', src: ''},
+      {name: 'HTML/CSS', src: ''},
+      {name: 'Lua script(redis)', src: ''},
+    ],
+    backend: [
+      {name: 'nodejs', src: '/images/nodejs-256.png'},
+      {name: 'graphql', src: '/images/graphql-256.png'},
+      {name: 'apollo', src: '/images/apollo-256.png'},
+      {name: 'redis', src: '/images/redis-256.png'},
+      {name: 'elasticsearch', src: '/images/elasticsearch-256.png'},
+      {name: 'mongo', src: '/images/mongo-256.png'},
+      {name: 'sqlite', src: '/images/sqlite-256.png'},
+      {name: 'mysql', src: '/images/mysql-256.png'},
+    ],
+    frontend: [
+      {name: 'react', src: '/images/react-256.png'},
+      {name: 'apollo', src: '/images/apollo-256.png'},
+      {name: 'vue', src: '/images/vue-256.png'},
+    ],
+    others: [
+      {name: 'git', src: '/images/git-256.png'},
+      {name: 'docker', src: '/images/docker-256.png'},
+      {name: 'aws', src: '/images/aws-256.png'},
+      {name: 'raspberry-pi', src: '/images/rpi-256.png'},
+      {name: 'espressif', src: '/images/espressif-256.png'},
+      {name: 'atmel', src: '/images/atmel-256.png'},
+    ]
+  },
   projects: [
     {
       id: 'sg-model-1',

@@ -1,0 +1,23 @@
+.skill-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.tech-logo {
+  height: 40px;
+  margin: 5px 10px 5px;
+
+  @media  #{$layout-dektop}{
+    height: 60px;
+  }
+  @media #{$layout-mobile-sm} {
+    height: 35px;
+  }
+}
+
+.divider {
+  margin: 2px;
+  border-top: solid 1.5px rgb(238, 238, 238);
+}

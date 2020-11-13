@@ -19,7 +19,7 @@ const Layout: React.FC<LayoutProps> = ({title, children}) => {
         <meta name="author" content="Farhan Poh-asae"/>
         <meta property="og:title" content={title}/>
         <meta property="og:type" content="website"/>
-        <meta property="og:description" content="Software Engineer - Let code speak"/>
+        <meta property="og:description" content="Software Engineer - Let the code speak!"/>
         <meta property="og:url" content="https://avepha.me/personal"/>
         <meta property="og:image" content="https://avepha.me/images/brand-image.jpg"/>
       </Head>

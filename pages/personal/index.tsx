@@ -33,10 +33,10 @@ const HomePage: NextPage<{ information: any }> = ({information}) => {
                     hideWhenDone: false,
                     hideWhenDoneDelay: 5000,
                   }}>
-                    Embedded System
-                    <Typist.Backspace count={16} delay={2000}/>
                     Full Stack Developer
-                    <Typist.Backspace count={26} delay={2000}/>
+                    <Typist.Backspace count={26} delay={3000}/>
+                    Embedded System
+                    <Typist.Backspace count={16} delay={1000}/>
                     Software Engineer
                     <Typist.Delay ms={5000}/>
                     <Typist.Backspace count={17} delay={100}/>

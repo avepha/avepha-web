@@ -12,11 +12,7 @@ export default {
     freelanceStatus: 'Available',
     socialLinks: {
       facebook: 'https://facebook.com/s.alfarie',
-      twitter: '',
-      pinterest: '',
-      behance: '',
       linkedin: 'https://www.linkedin.com/in/fa-dev',
-      dribbble: '',
       github: 'https://github.com/avepha/avepha-web'
     },
     brandImage: '/images/brand-image.jpg',

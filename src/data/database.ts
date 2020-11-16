@@ -28,38 +28,20 @@ export default {
   },
   experiences: [
     {
-      topic: 'Embedded System Developer',
-      icon: 'briefcase',
-      details: [
-        {
-          year: '2015 - 2016',
-          position: 'Hydroponics Timer and Solution Controller',
-          company: 'Agro Intelligent',
-          mdFile: 'hydroponic-timer-solution-controller.md',
-        },
-        {
-          year: '2015 - (Internship)',
-          position: 'Screen printing machine',
-          company: 'Internship',
-          mdFile: 'screen-printing-machine.md',
-        },
-      ]
-    },
-    {
       topic: 'Embedded system & Full stack developer',
       icon: 'briefcase',
       details: [
         {
           year: '2016 - 2020',
-          position: 'Electrical Conductivity Control for indoor plant factory.(JP)',
-          company: 'Agro Intelligent',
-          mdFile: 'conductivity-control.md',
-        },
-        {
-          year: '2016 - 2020',
           position: '4 years of development smart farming device.',
           company: 'Agro Intelligent',
           mdFile: 'smartgrobot.md',
+        },
+        {
+          year: '2016 - 2020',
+          position: 'Electrical Conductivity Control for indoor plant factory.(JP)',
+          company: 'Agro Intelligent',
+          mdFile: 'conductivity-control.md',
         },
         {
           year: '2017-2018',
@@ -88,6 +70,24 @@ export default {
       ]
     },
     {
+      topic: 'Embedded System Developer',
+      icon: 'briefcase',
+      details: [
+        {
+          year: '2015 - 2016',
+          position: 'Hydroponics Timer and Solution Controller',
+          company: 'Agro Intelligent',
+          mdFile: 'hydroponic-timer-solution-controller.md',
+        },
+        {
+          year: '2015 - (Internship)',
+          position: 'Screen printing machine',
+          company: 'Internship',
+          mdFile: 'screen-printing-machine.md',
+        },
+      ]
+    },
+    {
       topic: 'Game engine developer',
       icon: 'briefcase',
       details: [
@@ -99,6 +99,7 @@ export default {
         },
       ]
     },
+    
   ],
   skill: {
     programming: [

@@ -1,4 +1,4 @@
-**[Device]** [See more](http://www.google.com)
+**[Device]** [See more](https://avepha.me/personal/projects)
 - Implemented Timer control device for control water to the plants.
 - Experienced with EEPROM CRUD using C/C++.
 - Experienced with Non-Preemptive task on single-threaded system.

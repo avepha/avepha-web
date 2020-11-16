@@ -1,9 +1,9 @@
-**[SG - Model 1]** [See more](http://avepha.me/personal/projects/project-detail/sg-model-1)
+**[SG - Model 1]** [See more](https://avepha.me/personal/projects)
 - Experienced with LinkIt Smart 7688 (linux board) to use **NodeJS(ES5)** for local web service and high-level features. 
 - Experienced with **ATMEGA microcontroller using C/C++** for real-time and low level features.
 - Implemented SPA using **Angular 4** for local web application.
 
-**[SG - Model 2]** [See more](http://avepha.me/personal/projects/project-detail/sg-model-2)
+**[SG - Model 2]** [See more](https://avepha.me/personal/projects)
 - Experienced with **Raspberry Pi** to use **NodeJS(ES6)** for local web service, High level feature and serial port communication system(Rework).
 - Experienced with **SQLite** for local database.
 - Experienced with rest api using **ExpressJS**.
@@ -22,7 +22,7 @@
 
 <span id="sg_model3"> </span>
 
-**[SG - Model 3]** [See more](http://avepha.me/personal/projects/project-detail/sg-model-3)
+**[SG - Model 3]** [See more](https://avepha.me/personal/projects)
 - Experienced with **Raspberry Pi Zero** W to use **NodeJS(TypeScripts)** for local web service, High level feature and serial port communication system(refactor).
 - Experienced with **GraphQL query language framework** for both back-end and front-end(Rework).
 - Experienced with real-time web application using **GraphQL subscription**(Rework).

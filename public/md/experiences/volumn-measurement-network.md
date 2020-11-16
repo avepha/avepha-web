@@ -1,4 +1,4 @@
-**[VMN Device]** [See more](http://www.google.com)
+**[VMN Device]** [See more](https://avepha.me/personal/projects)
 - Experienced with Raspberry PI 3 to use NodeJS(ES6) for local web service, High level feature and serial port communication system.
 - Experienced with ESP-32 32bit micro-controller using C/C++ for real-time and low level features.
 - Experienced with ESP-32 as local TCP server for multi-station measurement unit.

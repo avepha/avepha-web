@@ -6,6 +6,6 @@
 
 
 ## About me
-- Software engineer with 4 years of experience in programming, Front-end, Back-end, Cloud and Embedded system in various projects.
+- Software engineer with years of experience in programming, Front-end, Back-end, Cloud and Embedded system in various projects.
 
 [<img src="http://res.cloudinary.com/unicodeveloper/image/upload/v1524776764/next-jslogo.svg" align="right" width="150">](https://github.com/zeit/next.js)

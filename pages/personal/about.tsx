@@ -38,7 +38,7 @@ const About: NextPage<{ information: any }> = ({information}) => {
                   <span className="color-theme">{information.name}</span>
                 </h3>
                 <p>
-                  Software engineer with 4 years of experience in programming,
+                  Software engineer with years of experience in programming,
                   Front-end, Back-end, Cloud and Embedded system in various
                   projects.
                 </p>

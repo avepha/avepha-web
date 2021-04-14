@@ -1,7 +1,7 @@
 export default {
   information: {
     name: 'Farhan Poh-Asae',
-    aboutContent: 'Software engineer with 4 years of experience in programming, Front-end, Back-end, Cloud and Embedded system in various projects.',
+    aboutContent: 'Software engineer with years of experience in programming, Front-end, Back-end, Cloud and Embedded system in various projects.',
     age: 26,
     // phone: '+669-3790-0099',
     phone: '-',
